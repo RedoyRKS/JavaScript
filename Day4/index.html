@@ -15,16 +15,31 @@
         // hello()
 
         // with perameter
-        function tom(fname, lname) {
-            document.write("Hello " + " " + fname + " " + lname)
-        }
-        function add (a,b){
-            document.write(a+b)
-        }
+        // function tom(fname, lname) {
+        //     document.write("Hello " + " " + fname + " " + lname)
+        // }
+        // function add (a,b){
+        //     document.write(a+b)
+        // }
 
-        tom("redoy", "saha")
-        document.write("<br>")
-        add(3,5)
+        // tom("redoy", "saha")
+        // document.write("<br>")
+        // add(3,5)
+
+        //Local and global variable....
+        var a = "hello UIU tumi onek mara deu" //(global variable)
+        function hello() {
+            document.write(a + "<br>")
+        }
+        function uiu() {
+            var b = "UIU tumi ki kono din valo hobe na" //local variable
+            document.write(b + "<br>")
+        }
+        hello()
+        uiu()
+        document.write(a)
+        document.write(b) //not print it is local variable
+
     </script>
 </head>
 
